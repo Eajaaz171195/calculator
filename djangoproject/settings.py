@@ -29,7 +29,7 @@ SECRET_KEY = 'kek-qb=*2g(45*z#$who)d_=$r79=s5pgjxiv7wnu13&p)v439'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
