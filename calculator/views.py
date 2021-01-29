@@ -11,8 +11,13 @@ def index(request):
     return render(request,'index.html', context)
 
 def submitquery(request):
+    if 'rst' in request.POST:
+        context = { 'r_numb1': '0'
+                ,'r_numb2': '0'
+                }
+        return render(request,'index.html', context)
     number_1 = request.POST.get('numb1', False)
-    number_2 = request.POST.get('numb2', False)
+    number_2 = request.POST.get('numb2', False) 
     if number_1 is not '' and number_2 is not '':
         n1 = int(number_1)
         n2 = int(number_2)
